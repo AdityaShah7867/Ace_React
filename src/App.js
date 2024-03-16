@@ -9,15 +9,20 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Login from "./Pages/Auth/Login";
 import Register from "./Pages/Auth/Register";
 import Profile from "./Pages/Profile/Profile";
+import Sidebar from "./Components/Sidebar/Sidebar";
 import Map from "./Pages/Map";
 import LiveTrack from "./Pages/LiveTrack";
+
 
 const App = () => {
   return (
     <>
-      <Router>
-        <>
-          <Navbar />
+
+    <Router>
+      <>
+        {/* <Navbar /> */}
+        <Sidebar />
+
 
           <ToastContainer />
           <Routes>
