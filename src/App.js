@@ -9,13 +9,15 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Login from "./Pages/Auth/Login";
 import Register from "./Pages/Auth/Register";
 import Profile from "./Pages/Profile/Profile";
+import Home from "./Pages/Home/Home";
+import Book from "./Pages/Book/Book";
 
 const App = () => {
   return (
     <>
     <Router>
       <>
-        <Navbar />
+        {/* <Navbar /> */}
 
         <ToastContainer />
         <Routes>
@@ -25,6 +27,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/book" element={<Book />} />
           {/* PRIVATE ROUTES BELOW THIS */}
           {/* <Route path="/" element={<Private />}>
             <Route path="/editcustomer" element={<CustomerEdiit />} />
