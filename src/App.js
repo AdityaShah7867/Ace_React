@@ -9,13 +9,15 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Login from "./Pages/Auth/Login";
 import Register from "./Pages/Auth/Register";
 import Profile from "./Pages/Profile/Profile";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 const App = () => {
   return (
     <>
     <Router>
       <>
-        <Navbar />
+        {/* <Navbar /> */}
+        <Sidebar />
 
         <ToastContainer />
         <Routes>
