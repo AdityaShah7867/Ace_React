@@ -4,13 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AuthProvider } from './Context/AuthContext';
+import { ChakraProvider } from '@chakra-ui/react'
+import { BookProvider } from './Context/BookContext';
+import { SocketProvider } from './Context/CommunityContext';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AuthProvider>
-
-      <App />
+      <BookProvider>
+        <SocketProvider>
+          <ChakraProvider>
+            <App />
+          </ChakraProvider>
+        </SocketProvider>
+      </BookProvider>
     </AuthProvider>
   </React.StrictMode >
 );

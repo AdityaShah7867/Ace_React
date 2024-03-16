@@ -12,16 +12,23 @@ import Profile from "./Pages/Profile/Profile";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Map from "./Pages/Map";
 import LiveTrack from "./Pages/LiveTrack";
-
+import Book from "./Pages/Book/Book";
+import Home from "./Pages/Home/Home";
+import Details from "./Pages/Book/Details";
+import Chat from "./Pages/Chat/Chat";
+// Importing Socket.IO client library
+const io = require('socket.io-client');
 
 const App = () => {
+
+
   return (
     <>
 
-    <Router>
-      <>
-        {/* <Navbar /> */}
-        <Sidebar />
+      <Router>
+        <>
+          {/* <Navbar /> */}
+          <Sidebar />
 
 
           <ToastContainer />
@@ -38,6 +45,10 @@ const App = () => {
           </Route> */}
             <Route path="/map" element={<Map />} />
             <Route path="/live" element={<LiveTrack />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/book" element={<Book />} />
+            <Route path="/details/:rideId" element={<Details />} />
+            <Route path="/chat/:rideId" element={<Chat />} />
 
 
 

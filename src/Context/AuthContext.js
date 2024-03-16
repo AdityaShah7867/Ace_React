@@ -1,6 +1,7 @@
 // AuthContext.js
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
+import { host } from '../constants';
 
 
 const AuthContext = createContext();
@@ -20,11 +21,12 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const checkAuth = async () => {
             try {
-                const response = await axios.get('http://localhost:4000/auth/v1/getUserId', {
+                const response = await axios.get(`${host}/auth/v1/getUserId`, {
                     headers: {
                         authorization: `Bearer ${localStorage.getItem("auth")}`,
                     },
                 });
+
                 setUser(response.data.data);
 
             } catch (error) {

@@ -30,7 +30,6 @@ function LiveTrack() {
     }, []);
     return (
         <div>
-
             <iframe
                 title="Map"
                 src={`https://www.google.com/maps/embed/v1/view?key=${apiKey}&center=${lat},${long}&zoom=15`}

@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import { host } from "../../constants";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/auth/v1/login",
+        `${host}/auth/v1/login`,
         {
           email,
           password,
