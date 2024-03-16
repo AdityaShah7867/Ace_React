@@ -11,6 +11,7 @@ import Register from "./Pages/Auth/Register";
 import Profile from "./Pages/Profile/Profile";
 import Home from "./Pages/Home/Home";
 import Book from "./Pages/Book/Book";
+import Details from "./Pages/Book/Details";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/home" element={<Home />} />
           <Route path="/book" element={<Book />} />
+          <Route path="/details" element={<Details />} />
           {/* PRIVATE ROUTES BELOW THIS */}
           {/* <Route path="/" element={<Private />}>
             <Route path="/editcustomer" element={<CustomerEdiit />} />
