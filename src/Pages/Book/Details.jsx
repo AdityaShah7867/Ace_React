@@ -1,9 +1,10 @@
 import React from "react";
+import { MdMessage } from "react-icons/md";
 
 const Details = () => {
   return (
     <div className="min-h-screen bg-white">
-      <div className="flex justify-center items-center font-bold mt-12">
+      <div className="flex justify-center items-center font-bold mt-10">
         <p>RESERVATION REQUEST</p>
       </div>
       <div className=" bg-gray-200 w-30  mt-8 flex justify-center items-center rounded-xl mx-4">
@@ -30,15 +31,58 @@ const Details = () => {
        </div>
        </div>
 
-       <div className="flex justify-between gap-4 m-8 font-bold border-b-2 border-gray-400 mt-2"> 
+       <div className="flex justify-between gap-4 m-8 font-bold border-b-2  border-gray-400 mt-2"> 
        <div>
         To:
        </div>
        <div>
-        Vasai , MAHARASTRA
+        VASAI , MAHARASTRA
+      
        </div>
        
        </div>
+
+       <div className="bg-gray-500 m-3 p-3 text-white rounded-xl">
+        <p>Fare as per Members:</p>
+        <br/>
+        <p>1 person : ₹ 500</p>
+        <p>1 person : ₹ 500</p>
+        <p>1 person : ₹ 500</p>
+        
+
+       </div>
+
+       <div className="flex flex-wrap ml-2 mt-12 p-2">
+
+        <div>
+            <img src="https://avatars.githubusercontent.com/u/121731399?v=4" className="w-16 h-16 rounded-full" alt="" />
+        </div>
+        <div className="font-bold ml-2">
+            Aditya Shah <br/>
+            <p className="font-medium text-sm">
+
+            start : 5.0 <br/>
+            13feedbacks
+            </p>
+        </div>
+        <div className="ml-8 mt-2 border-4 rounded-full p-4 text-xl">
+        <MdMessage />
+
+        </div>
+
+        <div className="mt-2 ml-4 border-2 border-gray-200 rounded-lg p-2 ">
+            See Profile
+        </div>
+
+        
+
+               
+       </div>
+
+       <div className="mt-8 flex justify-center mx-auto items-center  bg-violet-600 p-4 w-10/12 rounded-lg text-white">
+        BOOK A CAB
+       </div>
+      
 
 
     </div>
